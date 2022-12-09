@@ -15,6 +15,27 @@ function pluck(array, propiedad) {
 
   // Tu código acá:
 
+  /*var array     = [{ name: 'TV LCD',     price: 100}, 
+                { name: 'Computadora', price: 500 },
+                { name: 'cama',        price: 230}, 
+                { name: 'nevera',      price: 300 },
+                { name: 'lavadora',    price: 500}, 
+                { name: 'Computadora', price: 10000 },
+                { name: 'microondas',  price: 230}, 
+                { name: 'plancha',     price: 80 }]
+  var propiedad = "name"*/
+  var respuesta = [];
+
+  function elecciones (elemento){
+    return respuesta.push(elemento[propiedad]);
+  }
+  array.map(elecciones);
+
+  /*console.log(propiedad);
+  console.log(respuesta);*/
+
+  return respuesta;
+
 }
 
 // No modifiques nada debajo de esta linea //

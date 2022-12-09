@@ -15,6 +15,25 @@ function buscarAmigo(amigos, nombre) {
 
   // Tu código aca:
   
+  /*var amigos = [{ nombre: 'toni',   edad: 33 } , 
+                { nombre: 'ana',    edad: 25 } , 
+                { nombre: 'Daniel', edad: 12 } , 
+                { nombre: 'sami',   edad: 25 } ,  
+                { nombre: 'rober',  edad: 20 } , 
+                { nombre: 'michael',  edad: 25 } , 
+                { nombre: 'gabriela', edad: 18 } ,  
+                { nombre: 'jhon',     edad: 25 } ,  
+                { nombre: 'carlos',   edad: 35 } ,  
+                { nombre: 'alberto',  edad: 11 }];                
+  var nombre = "gabriela"*/
+  var objetoAmigo = {};
+
+  for(let i=0; i<amigos.length;i++){
+      if(amigos[i].nombre == nombre)
+          objetoAmigo = amigos[i];
+  }
+
+  return objetoAmigo;
 }
 
 // No modifiques nada debajo de esta linea //

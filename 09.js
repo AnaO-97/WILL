@@ -25,6 +25,23 @@ function filtrar(funcion) {
   //   return p.price >= 50;
   // }) => [{price: 100, name:'tv'}]
 
+  Array.prototype.filtrar = function(cb)
+  {
+    var arrayFiltro = []; 
+    var booleano;
+    //console.log(this[3]);
+    //console.log(booleano);
+    for(let i=0; i<this.length; i++)
+    {
+        booleano = cb(this[i]);
+        if(booleano)
+          arrayFiltro.push(this[i]);        
+        
+        //console.log("iterador = " + i + "bool " + booleano + "--" + "auxiliar" + this[i]);
+    }
+    
+    return arrayFiltro;
+  };
 };
 
 // No modifiques nada debajo de esta linea //

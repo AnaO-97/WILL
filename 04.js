@@ -14,6 +14,23 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
+//var num = 321121123;
+  var num2= "";
+
+  num = num.toString();  
+
+  for(let i=(num.length-1); i>=0; i--){
+      num2 = num2 + (num[i]);
+  }
+
+  if(num == num2)
+      return(true);
+  else
+      return(false);
+      
+  /*console.log(num);
+  console.log(num2);*/
+
 }
 
 // No modifiques nada debajo de esta linea //
